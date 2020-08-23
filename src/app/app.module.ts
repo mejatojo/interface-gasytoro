@@ -1,18 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {publicationsService} from './services/publications.service'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PartageComponent } from './partage/partage.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PartageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [publicationsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

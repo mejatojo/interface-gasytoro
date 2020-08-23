@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <button class="btn btn-secondary">Utilisateurs</button>
+            <select class="form-control">
+                <option>AAAAAAA</option>
+                <option>BBBBBB</option>
+            </select>
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <input type="text" placeholder="Rechercher des publications" (keyup)="recherche()" class="form-control" [(ngModel)]="ll">
+            {{ll}}   
+            <div *ngFor="let pub of appareils" width="100%" style="border: 1px solid black">
+                <a href=""><b>{{pub.name}}</b></a>
+                <p innerHTML="{{pub.contenu}}"></p> 
+                <div *ngFor="let nb of nbComments">
+                    <a href="" *ngIf="nb.id===pub.id">{{nb.nbComment}}</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
