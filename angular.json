@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gasytoro"
+    }
+  },
+  "defaultProject": "gasytoro",
+  "cli": {
+    "analytics": "74230ae2-35aa-48e6-847c-64ee9e80d9af"
+  }
 }
